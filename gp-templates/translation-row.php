@@ -180,7 +180,7 @@ if ( is_object( $glossary ) ) {
 
 			<?php if ( property_exists( $t, 'root_translation_set_id' ) ) : ?>
 			<dl>
-				<dt><?php _e( 'Root Translaton:', 'glotpress' ); ?></dt>
+				<dt><?php _e( 'Root Translation:', 'glotpress' ); ?></dt>
 			<?php if ( $t->translation_set_id === $t->root_translation_set_id ) : ?>
 				<dd>
 <?php
