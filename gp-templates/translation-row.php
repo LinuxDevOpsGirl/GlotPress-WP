@@ -190,15 +190,15 @@ if ( is_object( $glossary ) ) {
 						$root_locale->slug,
 						$root_translation_set->slug,
 						array(
-							'filters[status]' => 'either',
-							'filters[original_id]' => $t->original_id,
+							'filters[status]'         => 'either',
+							'filters[original_id]'    => $t->original_id,
 							'filters[translation_id]' => $t->id,
 						)
 					),
 					$root_translation_set->name_with_locale()
 				);
- ?>
- </dd>
+?>
+				</dd>
 			<?php else : ?>
 				<dd><?php _e( 'False', 'glotpress' ); ?></dd>
 			<?php endif; ?>
